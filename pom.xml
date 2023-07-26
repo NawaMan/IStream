@@ -6,7 +6,7 @@
     
     <groupId>net.nawaman.collection</groupId>
     <artifactId>istream</artifactId>
-    <version>1.0.10-SNAPSHOT</version>
+    <version>1.0.10</version>
     
     <name>istream</name>
     
