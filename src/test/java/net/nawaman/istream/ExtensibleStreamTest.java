@@ -4,10 +4,13 @@ import static java.util.stream.Collectors.toList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
+
+import net.nawaman.collection.istream.IStream;
 
 class ExtensibleStreamTest {
 	
@@ -24,8 +27,8 @@ class ExtensibleStreamTest {
 	
 	@Test
 	void testIterator() {
-		var list = new ArrayList<String>();
-		for (var string : (Iterable<String>)stream::iterator) {
+		List<String> list = new ArrayList<>();
+		for (String string : (Iterable<String>)stream::iterator) {
 			list.add(string);
 		}
 		assertEquals("[A, B, C]", list.toString());

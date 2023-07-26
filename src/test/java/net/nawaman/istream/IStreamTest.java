@@ -9,6 +9,8 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
 
+import net.nawaman.collection.istream.IStream;
+
 class IStreamTest {
 	
 	<D> void compare(String expeced, IStream<D> actual) {
