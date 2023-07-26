@@ -9,17 +9,18 @@ name: Build with Maven
 
 on:
   push:
+    branches:
+      - '**'
     branches-ignore:
-      - 'none'
+      - release
 
 permissions:
   contents: read
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 1.8
